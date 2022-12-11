@@ -1,10 +1,11 @@
-$(function () {
+//QUESTION -- does this need to reset at the end of each day??
 
+$(function () {
   //Declare saveButton variable equal to HTMl element with class="btn"
   var saveButton = $('.btn');
 
   //Declare variable hour for the current hour using dayjs() function
-  var hour = dayjs().hour();
+  var hour = dayjs().hour() -8;
 
   //Set today equal to the actual current day using dayjs() function
   var today = dayjs();
