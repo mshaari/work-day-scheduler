@@ -13,4 +13,4 @@ Below is an example of the Workday Scheduler at 12:30 PM. It shows a pre-loaded 
 
 ## Link to Workday Scheduler
 
-The Custom Password Generator can be found by clicking [here](https://mshaari.github.io/work-day-scheduler/).
+The Workday Scheduler can be found by clicking [here](https://mshaari.github.io/work-day-scheduler/).
