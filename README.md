@@ -9,6 +9,7 @@ Users can enter their plan for each hour / time slot and hit the blue save butto
 ## Screenshot
 
 Below is an example of the Workday Scheduler at 12:30 PM. It shows a pre-loaded schedule from local storage, then an edit being made and saved, the page being reloaded, and the edit persisting. 
+
 ![Main site](Assets/Images/Functioning-Schedule.gif)
 
 ## Link to Workday Scheduler

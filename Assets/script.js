@@ -21,11 +21,11 @@ $(function () {
     //Finds jQuery object being referenced in this function, finds its parent element, and gets the id of that parent element (which is the hour for that slot). Then it sets that equal to a variable "time"
     var time = $(this).parent().attr("id"); 
 
-    //Saves the entered information and the associated time (id) to local storage
+    //Saves the entered information and the associated time (id) to local storage (as an object)
     localStorage.setItem(time, text); 
   })
 
-  //Check local storage and set all rows to have the saved data from prior sessions
+  //Check local storage and set all rows to have the saved data from local storage (if any exists)
   $("#hour-9 .description").val(localStorage.getItem("hour-9"));
   $("#hour-10 .description").val(localStorage.getItem("hour-10"));
   $("#hour-11 .description").val(localStorage.getItem("hour-11"));
@@ -38,7 +38,7 @@ $(function () {
 
 
 
-  //A number of cases to determine the coloring for each block depending on the time of day. If the current time (hour) is less than the time for that row, that row is in the future so it adds the class "future" so that element using its id. This gives it a green shade. If the current time is greater than the time for that row, it adds the class "past" to that element which gives it a grey shade. If the current time is equal to the time for that row, it gets the class "present" and is shaded red. This applies for all cases below
+  //An if statement for each time block to determine the coloring for each time-block depending on the time of day. If the current time (hour) is less than the time for that row, that row is in the future so it adds the class "future" so that element using its id. This gives it a green shade. If the current time is greater than the time for that row, it adds the class "past" to that element which gives it a grey shade. If the current time is equal to the time for that row, it gets the class "present" and is shaded red. This applies for all cases below. 
   if (hour < 9) {
     $("#hour-9").addClass("future");
   } else if (hour > 9) {
