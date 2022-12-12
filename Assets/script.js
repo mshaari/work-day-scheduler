@@ -1,5 +1,3 @@
-//QUESTION -- does this need to reset at the end of each day??
-
 $(function () {
   //Declare saveButton variable equal to HTMl element with class="btn"
   var saveButton = $('.btn');
@@ -25,7 +23,7 @@ $(function () {
     localStorage.setItem(time, text); 
   })
 
-  //Check local storage and set all rows to have the saved data from local storage (if any exists)
+  //Check local storage and set all rows to have the saved data from local storage (if any exists). It sets the .description (text entered) for each time (determined by the id) equal to the local storage item (value) that matches that time (key)
   $("#hour-9 .description").val(localStorage.getItem("hour-9"));
   $("#hour-10 .description").val(localStorage.getItem("hour-10"));
   $("#hour-11 .description").val(localStorage.getItem("hour-11"));
